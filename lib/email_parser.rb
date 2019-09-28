@@ -4,6 +4,7 @@
 # or whitespace (' ').
 class EmailAddressParser
   
+<<<<<<< HEAD
   def initialize(emails)
     @emails = emails
   end
@@ -13,6 +14,12 @@ class EmailAddressParser
       email.split(",")
     end
     parsed_email.flatten.uniq
+=======
+  attr_accessor :parse
+  
+  def initialize(email)
+    @emails = []
+>>>>>>> 9b534f9bdc312ead20b4d86ae56fc66f51db781a
   end
   
 end
